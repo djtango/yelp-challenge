@@ -11,7 +11,7 @@ feature ' restaurants' do
 
   context 'restaurants have been added' do
     before do
-      Restaurants.create(name: 'KFC')
+      Restaurant.create(name: 'KFC')
     end
 
     scenario 'display restaurant' do
