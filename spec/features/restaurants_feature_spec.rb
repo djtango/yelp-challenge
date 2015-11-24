@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 feature ' restaurants' do
   context 'no restaurants have been added' do
@@ -8,7 +7,6 @@ feature ' restaurants' do
       expect(page).to have_link 'Add a restaurant'
     end
   end
-
   context 'restaurants have been added' do
     before do
       Restaurants.create(name: 'KFC')
@@ -20,5 +18,4 @@ feature ' restaurants' do
       expect(page).not_to have_content('No restaurants yet')
     end
   end
-
 end
